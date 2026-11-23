@@ -1,0 +1,13 @@
+title: 짧은 생각
+description: 일상에서 느낀 가벼운 생각을 남기는 곳
+lang: ko
+url: https://k-im-rose.github.io
+baseurl: "/k-im-rose-thoughts"
+markdown: kramdown
+kramdown:
+  input: GFM
+timezone: Asia/Seoul
+collections:
+  thoughts:
+    output: true
+    permalink: /thoughts/:name/

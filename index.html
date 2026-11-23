@@ -1,0 +1,20 @@
+---
+layout: cv
+title: 짧은 생각 — 김민지
+permalink: /
+---
+{% include cv-head.html active='thoughts' %}
+<main class="sheet">
+  <section class="chapter thoughts-list">
+    <h2>짧은 생각</h2>
+    <p class="lede">일상에서 느낀 가벼운 생각을 남깁니다.</p>
+    {% assign items = site.thoughts | sort: 'date' | reverse %}
+    {% for t in items %}
+    <a class="row" href="{{ t.url | relative_url }}"><b>{{ t.title }}</b><b class="yr">{{ t.date | date: "%Y.%m.%d" }}</b></a>
+    {% endfor %}
+  </section>
+  <footer class="foot">
+    <span>짧은 생각</span>
+    <a href="#top">맨 위로 ↑</a>
+  </footer>
+</main>
