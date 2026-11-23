@@ -471,3 +471,12 @@ a.work-row:hover small { color: #fff; }
 
 /* 첫 장(AI 작업실 · 짧은 생각): 헤더 바로 아래로 올림 */
 .sheet > .chapter:first-of-type { margin-top: 14px; }
+
+/* ═════ 짧은 생각 목록: 날짜는 제목 아래, 제목은 한 줄 ═════ */
+.thoughts-list .thought-row { display: block; }
+.thoughts-list .thought-row .t { display: block; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.thoughts-list .thought-row .d { display: block; margin-top: 4px; font-size: 14.5px; color: var(--soft); font-variant-numeric: tabular-nums; }
+@media (max-width: 720px) {
+  .thoughts-list .thought-row { font-size: 16.5px; }
+  .thoughts-list .thought-row .d { font-size: 14px; }
+}
