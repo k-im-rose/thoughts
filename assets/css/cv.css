@@ -480,3 +480,14 @@ a.work-row:hover small { color: #fff; }
   .thoughts-list .thought-row { font-size: 16.5px; }
   .thoughts-list .thought-row .d { font-size: 14px; }
 }
+
+/* ═════ 킴로즈 사이트 색: 버건디 메인, 글자는 블랙, 작은 글씨는 회색 ═════ */
+:root {
+  --ink: #111111;
+  --text: #111111;
+  --soft: #7f817a;
+  --sage: #7A3B45;        /* 메인 버건디: 로고 배경, 호버, 인용 선 */
+  --sage-light: #9C6F76;  /* 장식 점용: 메인보다 채도를 살짝 뺀 버건디 */
+}
+.logo:hover { background: #5E2D35; }
+.foot, .foot a { color: var(--soft); }
