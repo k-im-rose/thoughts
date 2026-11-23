@@ -489,6 +489,6 @@ a.work-row:hover small { color: #fff; }
   --sage: #8F1402;        /* 메인 레드 버건디: 로고 배경, 호버, 인용 선 */
   --sage-light: #8F1402;  /* 장식 점: 메인과 같은 색 */
 }
+.logo { background: var(--sage); }
 .logo:hover { background: #6E0F01; }
-.thoughts-list > h2 { color: var(--sage); }
 .foot, .foot a { color: var(--soft); }
