@@ -5,12 +5,12 @@ permalink: /
 ---
 {% include cv-head.html active='thoughts' %}
 <main class="sheet">
-  <section class="chapter thoughts-list">
+  <section class="chapter thoughts-list" id="works">
     <h2>짧은 생각</h2>
     <p class="lede">일상에서 느낀 가벼운 생각을 남깁니다.</p>
     {% assign items = site.thoughts | sort: 'date' | reverse %}
     {% for t in items %}
-    <a class="row thought-row" href="{{ t.url | relative_url }}"><b class="t">{{ t.title }}</b><span class="d">{{ t.date | date: "%Y.%m.%d" }}</span></a>
+    <a class="row work-row" href="{{ t.url | relative_url }}"><b>{{ t.title }}</b><span>// {{ t.summary }}</span><b class="yr">{{ t.date | date: "%Y.%m.%d" }}</b></a>
     {% endfor %}
   </section>
   <footer class="foot">
