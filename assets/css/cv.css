@@ -481,20 +481,6 @@ a.work-row:hover small { color: #fff; }
   .thoughts-list .thought-row .d { font-size: 14px; }
 }
 
-/* ═════ 킴로즈 사이트: 블랙 앤 화이트. 마우스 오버는 연한 회색 ═════ */
-:root {
-  --ink: #111111;
-  --text: #111111;
-  --soft: #7f817a;
-  --sage: #111111;
-  --sage-light: #111111;
-}
-.logo { background: #111111; color: #ffffff; }
-.logo:hover { background: #E4E4E0; color: #111111; }
-a.row:hover { background: #E4E4E0; }
-a.row:hover, a.row:hover b, a.row:hover span { color: #111111; }
-.foot, .foot a { color: var(--soft); }
-
 /* 로고: 가운데 정렬, 크기는 '짧은 생각' 제목보다 10% 크게 */
 .site-head { justify-content: center; text-align: center; }
 .site-head .logo { font-size: calc(clamp(34px, 3.4vw, 44px) * 1.1); }
